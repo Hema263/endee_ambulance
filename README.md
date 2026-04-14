@@ -1,3 +1,5 @@
+
+
 <p align="center">
   <picture>
       <source media="(prefers-color-scheme: dark)" srcset="docs/assets/logo-dark.svg">
@@ -137,3 +139,108 @@ If you offer a hosted or managed service based on this software, you must use yo
 ## Third-Party Software
 
 This project includes or depends on third-party software components licensed under their respective open-source licenses. Use of those components is governed by their own license terms.
+
+
+
+
+📌 Project Overview
+
+The AI-Based Smart Emergency Ambulance Routing System is designed to assist ambulance drivers in quickly identifying the most suitable hospital during emergencies.
+
+This system reduces critical decision-making time by analyzing:
+
+Distance to hospitals
+ICU bed availability
+Specialist availability
+Traffic conditions
+
+👉 Goal: Save lives by minimizing delay in emergency response
+
+🎯 Objective
+
+To build an intelligent system that:
+
+Automatically suggests the best hospital
+Reduces ambulance travel time
+Ensures availability of required medical facilities
+🚨 Problem Statement
+
+During emergencies, ambulance drivers face challenges such as:
+
+Choosing the right hospital
+Checking bed availability
+Finding required specialists
+
+❌ These delays can cost lives.
+
+💡 Proposed Solution
+
+This project provides an AI-based decision system where:
+
+Driver inputs location & patient condition
+System analyzes nearby hospitals
+Recommends the best hospital instantly
+🧠 AI Logic Used
+
+The system uses a scoring algorithm based on:
+
+📍 Distance (Haversine Formula)
+🚦 Traffic Conditions
+🏥 ICU Bed Availability
+👨‍⚕️ Specialist Matching
+
+👉 The hospital with the lowest score is selected as the best option.
+
+⚙️ Features
+🚑 Ambulance Module
+Input current location (latitude & longitude)
+Select patient condition (cardiac / trauma / neuro)
+Get instant hospital recommendation
+🏥 Hospital Selection
+Filters hospitals with ICU availability
+Matches required specialists
+Considers traffic for faster routing
+📊 Output
+Recommended hospital name
+Distance from current location
+ICU bed availability
+Specialist type
+Traffic level
+
+📊 Dataset Description
+The dataset contains:
+
+Hospital Name
+Latitude & Longitude
+ICU Beds Available
+General Beds
+Specialist Type
+Traffic Level
+🛠️ Tech Stack
+Programming Language: Python 🐍
+Libraries: Pandas
+Concepts Used: AI Decision Algorithm, Distance Calculation
+▶️ How to Run the Project
+Step 1: Install dependencies
+pip install pandas
+Step 2: Navigate to project folder
+cd endee_ambulance
+Step 3: Run the program
+python main.py
+💻 Sample Input
+Enter current latitude: 10.78  
+Enter current longitude: 78.71  
+Enter patient condition: cardiac
+✅ Sample Output
+Recommended Hospital: Sunrise Hospital  
+Distance: 1.25 km  
+ICU Beds Available: 3  
+Specialist: cardiac  
+Traffic Level: medium
+
+🚀 Future Enhancements
+📱 Mobile App Integration (Flutter / Android)
+🗺️ Google Maps API for real-time navigation
+🔊 Voice assistance for drivers
+🌐 Real-time hospital data updates
+🤖 Machine Learning model for prediction

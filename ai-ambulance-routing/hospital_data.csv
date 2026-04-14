@@ -1,0 +1,6 @@
+hospital_name,latitude,longitude,icu_beds,general_beds,specialist,traffic_level
+City Hospital,10.7905,78.7047,5,20,cardiac,medium
+Apollo Hospital,10.8000,78.6900,2,10,trauma,high
+Global Health Center,10.7800,78.7200,0,15,neuro,low
+Sunrise Hospital,10.7700,78.7100,3,5,cardiac,medium
+Government Hospital,10.7950,78.7050,10,50,trauma,low
